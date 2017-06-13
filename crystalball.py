@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# A simple script to act as a crystal ball
+
 import random, time
 
 def crystal_ball():
@@ -24,11 +26,11 @@ def crystal_ball():
                'My sources say no',
                'Outlook not so good.'
                'Very doubtful.']
-
+    
+    time.sleep(random.randint(1,5))
     return random.choice(answers)
 
 def main():
-    time.sleep(random.randint(1,5))
     print crystal_ball()
     return
 
