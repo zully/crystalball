@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import random
+import random, time
 
 def crystal_ball():
     answers = ['It is certain.',
@@ -28,6 +28,7 @@ def crystal_ball():
     return random.choice(answers)
 
 def main():
+    time.sleep(random.randint(1,5))
     print crystal_ball()
     return
 
